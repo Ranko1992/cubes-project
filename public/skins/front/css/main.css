@@ -458,7 +458,7 @@ section.goods .items button:hover{
 
 .soldParts{
 
-    background:  url(img-style/audi_car.png) ;
+    background:  url(/skins/front/img/audi_background.jpg) ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

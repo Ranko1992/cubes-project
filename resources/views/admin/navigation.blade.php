@@ -5,6 +5,12 @@
 			<span class="nav-link-text">Dashboard</span>
 		</a>
 	</li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+		<a class="nav-link" href="{{route('admin.cars.index')}}">
+			<i class="fa fa-fw fa-car"></i>
+			<span class="nav-link-text">Cars</span>
+		</a>
+	</li>
 	<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Static Pages">
 		<a class="nav-link" href="{{route('admin.static-pages.index')}}">
 			<i class="fa fa-fw fa-newspaper-o"></i>

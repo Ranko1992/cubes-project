@@ -14,7 +14,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img class="img-responsive" src="/skins/front/img/index_slider.jpg" alt=""/>
+                        <img class="img-responsive" src="/skins/front/img/slider_audi.jpg" alt=""/>
                         <div class="carousel-caption">
                             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             <h2>Gear</h2><br>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img class="img-responsive" src="/skins/front/img/index_slider1.jpg" alt=""/>
+                        <img class="img-responsive" src="/skins/front/img/audi_slider2.jpg" alt=""/>
                         <div class="carousel-caption">
                             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             <h2>Gear</h2><br>
@@ -87,7 +87,7 @@
                         <a href="#"><img src="/skins/front/img/nissan.png" alt=""/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="img/wv_logo.png" alt=""/></a>
+                        <a href="#"><img src="/skins/front/img/wv_logo.png" alt=""/></a>
                     </div>
                     <div class="item">
                         <a href="#"><img src="/skins/front/img/bmw_logo.png" alt=""/></a>
@@ -129,7 +129,7 @@
                                 <figure>
                                     <img class="center-block" src="/skins/front/img/devices_icon.png" alt=""/>
                                     <figcaption class="text-center">
-                                        <a href="#"><h3>Devices</h3></a>
+                                        <a href="#"><h3>Mehanika</h3></a>
                                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                                             Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
                                             College in Virginia, looked up one of the more obscure Latin words.</p>
@@ -143,7 +143,7 @@
                                 <figure>
                                     <img class="center-block" src="/skins/front/img/chip_icon.png" alt=""/>
                                     <figcaption class="text-center">
-                                        <a href="#"><h3>Devices</h3></a>
+                                        <a href="#"><h3>Elektronika</h3></a>
                                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                                             Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
                                             College in Virginia, looked up one of the more obscure Latin words.</p>
@@ -157,7 +157,7 @@
                                 <figure>
                                     <img class="center-block" src="/skins/front/img/sock_icon.png" alt=""/>
                                     <figcaption class="text-center">
-                                        <a href="#"><h3>Devices</h3></a>
+                                        <a href="#"><h3>Limarija</h3></a>
                                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                                             Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
                                             College in Virginia, looked up one of the more obscure Latin words.</p>
@@ -188,7 +188,7 @@
                     <h3 class="text-center">Automobili iz uvoza</h3>
                     <div class="row">
                         <div class="col-xs-10">
-                            <div class="slider"><!-- The slider -->
+                                <div class="slider"><!-- The slider -->
                                 <div><!-- A mandatory div used by the slider -->
                                     <!-- Each div below is considered a slide -->
                                     <div>

@@ -109,6 +109,16 @@ Route::middleware('auth')
 	Route::post('/static-pages/reorder', 'StaticPagesController@reorder')->name('admin.static-pages.reorder');
 	
 	// ADD ADMIN ROUTES HERE
+	//Cars routes
+	Route::get('/cars', 'CarsController@index')->name('admin.cars.index');
+
+	Route::get('/cars/add', 'CarsController@add')->name('admin.cars.add');
+	Route::post('/cars/add', 'CarsController@insert');
+			
+	Route::get('/cars/edit/{id}', 'CarsController@edit')->name('admin.cars.edit');
+	Route::post('/cars/edit/{id}', 'CarsController@update');
+	
+	Route::post('/cars/delete', 'CarsController@delete')->name('admin.cars.delete');
 	
 	
 	
