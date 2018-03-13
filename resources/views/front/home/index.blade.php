@@ -3,7 +3,7 @@
 @section('content')
  <!--SLIDER-->
         <article class="container-fluid slide_carusel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="hover">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000000000" data-pause="hover">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

@@ -15,7 +15,8 @@
                     <a href=""><img src="/skins/front/img/phone_icon.png" alt=""/>061 14 96 195</a>
                 </li>
                 <li>
-                    <a href=""><img src="/skins/front/img/clock_icon.png" alt=""/>Radno vreme: <span><strong>pon-pet </strong>08:00-20:00</span></a>
+                    <a href=""><img src="/skins/front/img/clock_icon.png" alt=""/>Radno vreme: <span><strong>pon-pet </strong>08:00-20:00</span>
+                    <span><strong>| sub </strong>08:00-20:00</span></a>
                 </li>
             </ul>
         </div>
