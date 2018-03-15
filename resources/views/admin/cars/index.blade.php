@@ -54,7 +54,7 @@
 						<td>{{$car->id}}</td>
 						<td>{{$car->title}}</td>
 						<td>{{$car->model}}</td>
-                                                <td>{{$car->production_yer}}</td>
+                                                <td>{{$car->production_year}}</td>
 						<td>{{$car->miles}}</td>
 						<td>{{$car->power}}</td>
                                                 <td>{{$car->fuel}}</td>
