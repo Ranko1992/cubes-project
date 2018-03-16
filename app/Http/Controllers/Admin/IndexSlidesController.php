@@ -12,7 +12,7 @@ class IndexSlidesController extends Controller
 	public function index() {
 		
 		$indexSlides = IndexSlide::orderBy('order_number', 'asc')->get();
-		
+	
 		return view('admin.index-slides.index', [
 			'indexSlides' => $indexSlides
 		]);

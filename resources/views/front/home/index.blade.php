@@ -3,7 +3,7 @@
 @section('content')
  <!--SLIDER-->
         <article class="container-fluid slide_carusel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000000000" data-pause="hover">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="600000" data-pause="hover">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -11,42 +11,25 @@
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
 
+                
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="img-responsive" src="/skins/front/img/slider_audi.jpg" alt=""/>
+                  <div class="carousel-inner" role="listbox">
+                    @foreach($indexSlides as $indexSlide)
+                    <div class="item {{$loop->first ? 'active' : ''}}">
+                        <img class="img-responsive"
+                             src="{{\Storage::disk('public')->url('/index-slides/' . $indexSlide->photo_filename)}}"
+                             alt="{{$indexSlide->title}}"/>
                         <div class="carousel-caption">
                             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            <h2>Gear</h2><br>
-                            <p>automotive psd template</p>
+                            <h2>{{$indexSlide->title}}</h2><br>
+                            <p>{{$indexSlide->description}}</p>
                         </div>
                         <div class="carousel-caption-right">
                             <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                         </div>
                     </div>
-                    <div class="item">
-                        <img class="img-responsive" src="/skins/front/img/audi_slider2.jpg" alt=""/>
-                        <div class="carousel-caption">
-                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            <h2>Gear</h2><br>
-                            <p>automotive psd template</p>
-
-                        </div>
-                        <div class="carousel-caption-right">
-                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="/skins/front/img/index_slider2.jpg" alt=""/>
-                        <div class="carousel-caption">
-                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            <h2>Gear</h2><br>
-                            <p>automotive psd template</p>
-                        </div>
-                        <div class="carousel-caption-right">
-                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        </div>
-                    </div>
+                    @endforeach
+               
                 </div>
 
                 <!-- Controls -->

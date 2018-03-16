@@ -103,7 +103,6 @@
                         @endif
 
                     </div>
-
                     <div class="form-group">
                         <label>Upload photo</label>
                         <div class="custom-file">

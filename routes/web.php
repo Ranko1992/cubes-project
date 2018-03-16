@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/cars', 'CarsController@index');
+
 
 Route::get('/contact-us', 'ContactController@show')->name('contact-us');
 Route::post('/contact-us', 'ContactController@process');
