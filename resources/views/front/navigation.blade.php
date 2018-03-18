@@ -36,7 +36,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Pocetna</a></li>
+                        <li class="active"><a href="{{url('/')}}">Pocetna</a></li>
 
                         <li><a href="#">O nama</a></li>
                         <li><a href="#">Usluge</a></li>

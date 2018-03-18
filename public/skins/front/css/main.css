@@ -204,11 +204,11 @@ a.navbar-brand{
 }
 .carousel-caption {
     text-align: left;
-    background: #195fad;
+    background: #1719f24d;
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-    width: 400px;
+    width: 300px;
     color: #fff;
     left: 0;
     height: 150px;
@@ -232,7 +232,7 @@ a.navbar-brand{
     background-image: none;
 }
 .carousel-caption-right{
-    background: #195fad;
+    background: #1719f24d;
     position: absolute;
     right: 0;
     color: #fff;

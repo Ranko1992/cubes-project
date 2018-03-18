@@ -11,8 +11,17 @@ class CarsController extends Controller
         
         $allCars = Cars::orderBy('created_at', 'desc')->paginate(10);
         
-        return view('front.cars.index',[
+        return view('front.cars.car',[
             'allCars' =>$allCars
         ]);
     }
+    
+    public function oneCar($id) {
+		
+		$car = Cars::findOrFail($id);
+		
+		return view('front.cars.one-car', [
+			'car' => $car
+		]);
+	}
 }

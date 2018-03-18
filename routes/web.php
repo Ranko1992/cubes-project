@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('/cars', 'CarsController@index');
+Route::get('/cars/one-car/{id}', 'CarsController@oneCar')->name('cars.car');
 
 
 Route::get('/contact-us', 'ContactController@show')->name('contact-us');

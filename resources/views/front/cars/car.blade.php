@@ -5,8 +5,8 @@
 <div class="container">
                 <article>
                     <ol class="breadcrumb">
-                        <li><a href="{{url('/')}}">Home</a></li>
-                        <li><a href="#">Cars</a></li>
+                        <li><a href="{{url('/')}}">Pocetna</a></li>
+                        <li><a href="#">Automobili iz uvoza</a></li>
                     </ol>
                 </article>
             </div>
@@ -14,21 +14,26 @@
         <main>
             <section class="news newsPage">
                 <div class="container">
-                    <h3>Automobili iz <strong>Svajcarske</strong></h3>
+                    <h3>Automobili iz <strong>Svajcarske</strong><hr></h3>
                     <div class="row">
 
                         @foreach($allCars as $car)
                         <div class="col-sm-6 col-md-4">
                             <figure class="newsItem">
                                 <div class="imgNews">
+                                    <a class="img-responsive" href="{{url('/cars/one-car/' . $car->id)}}">
                                     <img class="img-responsive" 
                                          src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename)}}"
-                                         alt="{{$car->title}}"/>
+                                         alt="{{$car->title}}"
+                                         
+                                         />
+                                    </a>
                                   </div>
 
                                 <figcaption>
-                                    <a href="{{url('/cars/car/' . $car->id)}}"><h4><strong>{{$car->model}}</strong> - {{$car->title}}</h4></a>
+                                    <a href="{{url('/cars/one-car/' . $car->id)}}"><h4><strong>{{$car->title}}</strong> - {{$car->model}}</h4></a>
                                     <button type="button" class="btn items">{{$car->created_at}}</button>
+                                   
                                     <p>{{$car->description}}</p>
 
                                 </figcaption>
