@@ -28,8 +28,9 @@
                                                             <img class="img-responsive"
                                                                  src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename)}}"
                                          alt="{{$car->title}}"/>
+                                                           
                                                         </div>
-
+                                                        
                                                         <div class="item" data-slide-number="1">
                                                            <img class="img-responsive"
                                                                 src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_1)}}"
@@ -37,19 +38,27 @@
                                                         </div>
 
                                                         <div class="item" data-slide-number="2">
-                                                            <img class="img-responsive" src="img/productGallery2.jpg" alt=""/>
+                                                            <img class="img-responsive"
+                                                               src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_2)}}"
+                                                                alt="{{$car->title}}"/>
                                                         </div>
 
                                                         <div class="item" data-slide-number="3">
-                                                            <img class="img-responsive" src="img/productGallery3.jpg" alt=""/>
+                                                             <img class="img-responsive"
+                                                               src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_3)}}"
+                                                                alt="{{$car->title}}"/>
                                                         </div>
 
                                                         <div class="item" data-slide-number="4">
-                                                           <img class="img-responsive" src="img/productGallery4.jpg" alt=""/>
+                                                            <img class="img-responsive"
+                                                               src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_4)}}"
+                                                                alt="{{$car->title}}"/>
                                                         </div>
 
                                                         <div class="item" data-slide-number="5">
-                                                            <img class="img-responsive" src="img/productGallery5.jpg" alt=""/>
+                                                             <img class="img-responsive"
+                                                               src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_5)}}"
+                                                                alt="{{$car->title}}"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -70,24 +79,33 @@
                                             </a>
                                         </li>
                                         <li class="col-xs-4">
-                                            <a class="thumbnail" id="carousel-selector-1"><img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_1)}}"
+                                            <a class="thumbnail" id="carousel-selector-1">
+                                                <img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_1)}}"
                                          alt="{{$car->title}}"/>
                                             </a>
                                         </li>
                                         <li class="col-xs-4">
-                                            <a class="thumbnail" id="carousel-selector-2"><img class="img-responsive" src="img/productGallery2.jpg" alt=""/>
+                                            <a class="thumbnail" id="carousel-selector-2">
+                                               <img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_2)}}"
+                                         alt="{{$car->title}}"/>
                                             </a>
                                         </li>
                                         <li class="col-xs-4">
-                                            <a class="thumbnail" id="carousel-selector-3"><img class="img-responsive" src="img/productGallery3.jpg" alt=""/>
+                                            <a class="thumbnail" id="carousel-selector-3">
+                                                <img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_3)}}"
+                                         alt="{{$car->title}}"/>
                                             </a>
                                         </li>
                                         <li class="col-xs-4">
-                                            <a class="thumbnail" id="carousel-selector-4"><img class="img-responsive" src="img/productGallery4.jpg" alt=""/>
+                                            <a class="thumbnail" id="carousel-selector-4">
+                                               <img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_4)}}"
+                                         alt="{{$car->title}}"/>
                                             </a>
                                         </li>
                                         <li class="col-xs-4">
-                                            <a class="thumbnail" id="carousel-selector-5"><img class="img-responsive" src="img/productGallery5.jpg" alt=""/>
+                                            <a class="thumbnail" id="carousel-selector-5">
+                                              <img class="img-responsive" src="{{\Storage::disk('public')->url('/cars/' . $car->photo_filename_5)}}"
+                                         alt="{{$car->title}}"/>
                                             </a>
                                         </li>
                                     </ul>
@@ -95,15 +113,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 col-sm-12 productRate starrr">
-                        <div>
-                            <h4 class="text-uppercase">Product rate</h4>
-                            <a class="fa fa-cog fa-cog-yellow" href="#"></a>
-                            <a class="fa fa-cog fa-cog-yellow" href="#"></a>
-                            <a class="fa fa-cog fa-cog-yellow" href="#"></a>
-                            <a class="fa fa-cog" href="#"></a>
-                            <a class="fa fa-cog" href="#"></a>
-                            <p class="pull-right"><b>4585</b> votes / <b>97</b> last week</p>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="table-responsive-sm-12">
+                            <p><strong>Godina proizvodnje</strong>: {{$car->production_year}}</p>
+                            <p><strong>Presao kilometara</strong>: {{$car->miles}} km</p>
+                            <p><strong>Snaga</strong>: {{$car->power}} KS</p>
+                            <p><strong>Gorivo</strong>: {{$car->fuel}}</p>
+                 
                         </div>
                         <div class="productColor">
                             <h4 class="text-uppercase">Color </h4>
@@ -124,10 +140,10 @@
                             <button class="btn btn-default" type="button">Halogen</button>
                             <button class="btn btn-default" type="button">Biksenon</button>
                             <button class="btn btn-default" type="button">LED</button>
-                            <h4 class="text-uppercase">Price </h4>
+                            <h4 class="text-uppercase">Cena </h4>
                             <div>
-                                <h2>$2849<sup>99</sup> </h2>
-                                <button class="btn btn-primary">Buy now</button>
+                                <h2>{{$car->price}} eura</h2>
+                                
                             </div>
                         </div>
                         <div class="model">
@@ -136,37 +152,21 @@
                             <a href="#">BMW X5</a>
                         </div>
                         <div class="description">
-                            <h4 class="text-uppercase">Description</h4>
-                            <p>Ea ullum liber aperiri mi, impetus ate philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming ad. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                            <h4 class="text-uppercase">Tehnicki podaci</h4>
+                            
+                                {!!$car->description!!}
+                          
                         </div>
                         <div class="technicalCharacteristics">
-                            <h4 class="text-uppercase">Technical characteristics</h4>
+                            <h4 class="text-uppercase">Oprema</h4>
                             <div class="row">
-                                <div class="col-xs-3">
-                                    <p>Material</p>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>Plastic, Steel, Aluminum, Glass</p>
+                                
+                                <div class="col-xs-12">
+                                    <p>{!!$car->specification!!}</p>
                                 </div>
 
                             </div>
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <p>Width</p>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>150mm</p>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <p>Height</p>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>40mm</p>
-                                </div>
-                            </div>
+                     
                         </div>
                     </div>
                 </div>
