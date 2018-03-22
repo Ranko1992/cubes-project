@@ -220,21 +220,22 @@
         <div class="transparentColor">
             <div class="container">
                 <div  class="row">
+                    <h1 class="text-center text-warning">Nas rad u brojkama</h1>
                     <article class="col-xs-6 col-md-3 text-center">
-                        <h3>2580</h3>
-                        <p>Gear boxes</p>
+                        <h3>340</h3>
+                        <p>Popravljenih automobila</p>
                     </article>
                     <article class="col-xs-6 col-md-3 text-center">
-                        <h3>1820</h3>
-                        <p>Tuning goods</p>
+                        <h3>280</h3>
+                        <p>Zadovoljnih musterija</p>
                     </article>
                     <article class="col-xs-6 col-md-3 text-center">
-                        <h3>4582</h3>
-                        <p>Oil and supplies</p>
+                        <h3>45</h3>
+                        <p>Prodatih automobila</p>
                     </article>
                     <article class="col-xs-6 col-md-3 text-center">
-                        <h3>2524</h3>
-                        <p>Devices</p>
+                        <h3>134</h3>
+                        <p>Realizovanih slep usluga</p>
                     </article>
                 </div>
             </div>

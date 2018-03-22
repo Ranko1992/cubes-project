@@ -41,7 +41,7 @@
                         <li><a href="#">O nama</a></li>
                         <li><a href="#">Usluge</a></li>
                         <li><a href="{{url('/cars')}}">Automobili iz uvoza</a></li>
-                        <li><a href="#">Slep sluzba</a></li>
+                        <li><a href="{{url('/slep-sluzba')}}">Slep sluzba</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
 

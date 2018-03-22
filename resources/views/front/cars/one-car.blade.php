@@ -70,7 +70,7 @@
                                 <div class="col-sm-12" id="slider-thumbs">
                                     <!-- Bottom switcher of slider -->
                                     <!-- Thumbnail items -->
-                                    <h4 class="text-uppercase">More photos</h4>
+                                    <h4 class="text-uppercase">Sve slike</h4>
                                     <ul class="hide-bullets clearfix">
                                         <li class="col-xs-4">
                                             <a class="thumbnail" id="carousel-selector-0">
@@ -115,50 +115,31 @@
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <div class="table-responsive-sm-12">
+                            <h1>Osnovni podaci</h1>
                             <p><strong>Godina proizvodnje</strong>: {{$car->production_year}}</p>
                             <p><strong>Presao kilometara</strong>: {{$car->miles}} km</p>
                             <p><strong>Snaga</strong>: {{$car->power}} KS</p>
                             <p><strong>Gorivo</strong>: {{$car->fuel}}</p>
                  
                         </div>
-                        <div class="productColor">
-                            <h4 class="text-uppercase">Color </h4>
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <p class="flex-center"><span></span> Pink kitty</p>
-                                </div>
-                                <div class="col-xs-4">
-                                    <p class="flex-center"><span></span> Noble silver</p>
-                                </div>
-                                <div class="col-xs-4">
-                                    <p class="flex-center"><span></span> Deep black</p>
-                                </div>
-                            </div>
-                        </div>
+                 
                         <div class="productType">
-                            <h4 class="text-uppercase">Type </h4>
-                            <button class="btn btn-default" type="button">Halogen</button>
-                            <button class="btn btn-default" type="button">Biksenon</button>
-                            <button class="btn btn-default" type="button">LED</button>
-                            <h4 class="text-uppercase">Cena </h4>
+                            
+                            <h2 class="text-uppercase">Cena </h2>
                             <div>
-                                <h2>{{$car->price}} eura</h2>
+                                <h3>{{$car->price}} eura</h3>
                                 
                             </div>
                         </div>
-                        <div class="model">
-                            <h4 class="text-uppercase">Compatible models </h4>
-                            <a href="#">BMW X3</a>,
-                            <a href="#">BMW X5</a>
-                        </div>
+                        
                         <div class="description">
-                            <h4 class="text-uppercase">Tehnicki podaci</h4>
+                            <h4 class="text-uppercase">Tehnicki podaci:</h4>
                             
                                 {!!$car->description!!}
                           
                         </div>
                         <div class="technicalCharacteristics">
-                            <h4 class="text-uppercase">Oprema</h4>
+                            <h4 class="text-uppercase">Oprema:</h4>
                             <div class="row">
                                 
                                 <div class="col-xs-12">

@@ -17,6 +17,8 @@ Route::get('/cars', 'CarsController@index');
 Route::get('/cars/one-car/{id}', 'CarsController@oneCar')->name('cars.car');
 
 
+
+
 Route::get('/contact-us', 'ContactController@show')->name('contact-us');
 Route::post('/contact-us', 'ContactController@process');
 
@@ -123,7 +125,8 @@ Route::middleware('auth')
 	
 	Route::post('/cars/delete', 'CarsController@delete')->name('admin.cars.delete');
 	
-	
+	// Slep routes
+        Route::get('/slep-sluzba', 'SlepController@index')->name('admin.slep-sluzba.index');
 	
 	// END ADMIN ROUTES
 });
