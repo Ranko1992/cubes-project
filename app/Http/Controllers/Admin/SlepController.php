@@ -9,8 +9,8 @@ use App\Models\Slep;
 class SlepController extends Controller
 {
     public function index(){
-        $favors = Slep::orderBy('price', 'desc')->get();
-      
+        $favors = Slep::orderBy('price')->get();
+      dd($favors);
         return view('admin.slep-sluzba.index',[
             'favors' => $favors
         ]);

@@ -13,7 +13,7 @@ class CreateSlep extends Migration
      */
     public function up()
     {
-        Schema::create('slep', function (Blueprint $table) {
+         Schema::create('slep', function (Blueprint $table) {
             $table->increments('id');
             $table->string('photo_filename')->nullable();
 			$table->text('description')->nullable();
@@ -23,6 +23,7 @@ class CreateSlep extends Migration
             $table->timestamps();
     });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -33,4 +34,3 @@ class CreateSlep extends Migration
         Schema::dropIfExists('slep');
     }
 }
-
