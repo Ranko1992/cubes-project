@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSlep extends Migration
+class CreateTrailors extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,18 @@ class CreateSlep extends Migration
      */
     public function up()
     {
-         Schema::create('slep', function (Blueprint $table) {
+            Schema::create('trailors', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('photo_filename')->nullable();
+            $table->string('title');
+			$table->string('photo_filename')->nullable();
+      
 			$table->text('description')->nullable();
-                        $table->decimal('price', 8, 2)->default(0);
-                        $table->string('contact');
-                   
+		
+			$table->decimal('price', 8, 2)->default(0);
+
+		
             $table->timestamps();
-    });
+        });
     }
 
     /**
@@ -31,6 +34,6 @@ class CreateSlep extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('slep');
+        Schema::dropIfExists('trailors');
     }
 }

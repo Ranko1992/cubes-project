@@ -16,7 +16,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/cars', 'CarsController@index');
 Route::get('/cars/one-car/{id}', 'CarsController@oneCar')->name('cars.car');
 
-
+Route::get('/slep-sluzba', 'TrailorsController@index')->name('slep-sluzba.index');
 
 
 Route::get('/contact-us', 'ContactController@show')->name('contact-us');
@@ -126,7 +126,14 @@ Route::middleware('auth')
 	Route::post('/cars/delete', 'CarsController@delete')->name('admin.cars.delete');
 	
 	// Slep routes
-        Route::get('/slep-sluzba', 'SlepController@index')->name('admin.slep-sluzba.index');
-	
+        Route::get('/slep-sluzba', 'TrailorsController@index')->name('admin.slep-sluzba.index');
+        
+        Route::get('/slep-sluzba/add', 'TrailorsController@add')->name('admin.slep-sluzba.add');
+	Route::post('/slep-sluzba/add', 'TrailorsController@insert');
+                
+        Route::get('/slep-sluzba/edit/{id}', 'TrailorsController@edit')->name('admin.slep-sluzba.edit');
+        Route::post('/slep-sluzba/edit/{id}', 'TrailorsController@update');
+        
+        Route::post('/slep-sluzba/delete', 'TrailorsController@delete')->name('admin.slep-sluzba.delete');
 	// END ADMIN ROUTES
 });

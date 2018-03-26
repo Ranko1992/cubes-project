@@ -28,30 +28,28 @@
 				<thead>
 					<tr>
 						<th>#</th>
+                                                <th>Model</th>
 						<th>Slika 1</th>
 						<th>Opis</th>
                                                 <th>Cena</th>
-						<th>Kontakt</th>
+						
                                             <th class="text-center">Actions</th>
 					</tr>
 				</thead>
 				<tbody>
 					
-					@foreach($favors as $favor)       
+					@foreach($trailors as $trailor)       
 					<tr>
-						<td>{{$favor->id}}</td>
-                                                <td>{{$favor->photo_filename}}</td>
-                                                <td>{{$favor->description}}</td>
-                                                <td>{{$favor->price}}</td>
-                                                <td>{{$favor->contact}}</td>
-                                                
-					
-                                                
-						<td class="text-center">
+						<td>{{$trailor->id}}</td>
+                                                <td>{{$trailor->title}}</td>
+                                                <td>{{$trailor->photo_filename}}</td>
+                                                <td>{{$trailor->description}}</td>
+                                                <td>{{$trailor->price}}</td>
+                            	<td class="text-center">
 							<div class="btn-group">
 								<a 
 									class="btn btn-secondary"
-									href="{{route('admin.slep-sluzba.edit', ['id' => $favor->id])}}"
+									href="{{route('admin.slep-sluzba.edit', ['id' => $trailor->id])}}"
 									title="edit"
 								><i class="fa fa-pencil"></i></a>
 								
@@ -59,7 +57,7 @@
 									class="btn btn-secondary" 
 									title="delete" 
 									data-action="delete"
-									data-id="{{$favor->id}}"
+									data-id="{{$trailor->id}}"
 								>
 									<i class="fa fa-trash"></i>
 								</button>
