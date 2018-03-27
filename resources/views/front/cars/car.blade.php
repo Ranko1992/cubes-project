@@ -33,8 +33,8 @@
                                 <figcaption>
                                     <a href="{{url('/cars/one-car/' . $car->id)}}"><h4><strong>{{$car->title}}</strong> - {{$car->model}}</h4></a>
                                     <button type="button" class="btn items">{{$car->created_at}}</button>
-                                   
-                                    <p>{{$car->description}}</p>
+                                    <a class="btn btn-info" href="{{url('/cars/one-car/' . $car->id)}}" role="button">Pogledaj ponudu</a>
+                                    
 
                                 </figcaption>
                             </figure>
